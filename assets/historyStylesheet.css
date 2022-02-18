@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+}
+header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    width:25%;
+}
+nav{
+    width:100%;
+    text-decoration: none;
+}
+.menu-item{
+    display: inline-block;
+    font-size: 1.25rem;
+    padding: 1em 2em;
+    overflow: hidden;
+}
+.menu-item a{
+    text-decoration: none;
+    color: #1e1d17;
+}
+.menu-item a:hover{
+    text-decoration: underline;
+}
+.banner{
+    display: block;
+    background-image: url(/imágenes/image.webp);
+    background-size: cover;
+    height: 400px;
+    background-repeat: no-repeat;
+}
+h1{
+    font-size: 150px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    justify-content: center;
+    top: 100px;
+}
+.history-image{
+    background-color: #C26362;
+}
+.history-content img{
+    display: block;
+    padding:auto;
+    position: relative;
+    margin:auto;
+    padding-top: 119px;
+    height:450px;
+}
+.history-content{
+    box-sizing: content-box;
+    background-color: #C26362;
+    font-size: 24px;
+    margin:auto;
+    text-align: center;
+    height: max-content;
+    padding: 10%;
+    line-height:3em;
+}
+footer{
+    background-color: #e7d6d9;
+    text-align: center;
+    height:45vh;
+    vertical-align:middle;
+}
+.footer-grid{
+    padding-top: 15vh;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+@media only screen and (max-width: 600px){
+    header{
+        top:20;
+    }
+    h1{
+        font-size: 100px;
+        top:0px;
+    }
+    .menu-item{
+        text-align: center;
+        font-size:0.85rem;
+    }
+    #logo{
+        width:50%;
+        position:relative;
+        top:0px;
+        margin-top:20px;
+    }
+    nav{
+        font-size:40px;
+    }
+    label{
+        height:40px;
+        line-height:40px;
+    }
+    .banner{
+        height:fit-content;
+    }
+    .history-image{
+        background-color: #C26362;
+    }
+    .history-image img{
+        padding-top: 50px;
+        height:200px;
+    }
+    .history-content{
+        line-height: 1.2em;
+    }
+    footer{
+        height: 30vh;
+    }
+    .footer-grid{
+        padding-top: 0%;
+    }
+}
+@media only screen and (max-width: 900px) and (min-width: 600px){
+    .history-image img{
+        padding-top: 50px;
+        height:200px;
+}
+    footer{
+        height:25vh;
+    }
+    .footer-grid{
+        padding-top: 0%;
+    }
+}
